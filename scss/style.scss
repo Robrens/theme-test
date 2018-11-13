@@ -1,0 +1,29 @@
+/*!
+Theme Name: theme-test
+*/
+
+header {
+    background-color: rgb(167, 171, 175);
+    border: 1px solid black;
+    nav {
+        display: flex;
+        justify-content: space-around;
+        .branding {
+            display: inline-block;
+        }
+
+        .menu-primary-container {
+            display: inline-block;
+
+            #menu-primary {
+                li {
+                    display: inline-block;
+                    a{
+                        text-decoration: none;
+                        color: black;
+                    }
+                }
+            }
+        }
+    }
+}

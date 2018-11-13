@@ -1,9 +1,20 @@
-/*
+/*!
 Theme Name: theme-test
-Theme URI: https://wordpress.org/themes/theme-test/
-Author: Me
-Version: 1.0
 */
-body {
-    background-color: red;
-}
+header {
+  background-color: #a7abaf;
+  border: 1px solid black; }
+  header nav {
+    display: flex;
+    justify-content: space-around; }
+    header nav .branding {
+      display: inline-block; }
+    header nav .menu-primary-container {
+      display: inline-block; }
+      header nav .menu-primary-container #menu-primary li {
+        display: inline-block; }
+        header nav .menu-primary-container #menu-primary li a {
+          text-decoration: none;
+          color: black; }
+
+/*# sourceMappingURL=style.css.map */
