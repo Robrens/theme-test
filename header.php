@@ -28,12 +28,10 @@
                         <div class="carousel-inner">
                             <?php
                             $args = array(
-                                'category' => array( 'prenium' ),
+                                'category' => array( 'premium' ),
                             );
                             $products = wc_get_products($args);
-                            
-                            // 
-                            
+
                             $active = "active";
                             foreach ($products as $product) {
                             ?>
