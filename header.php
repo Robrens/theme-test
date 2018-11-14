@@ -26,6 +26,8 @@
                 <div class="col-12">
                     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                         <div class="carousel-inner">
+
+
                             <?php
                             $args = array(
                                 'category' => array( 'premium' ),
@@ -36,17 +38,20 @@
                             foreach ($products as $product) {
                             ?>
                             <div class="carousel-item <?php echo $active; ?>">
-                            <?php $active = ""; ?>
-                                <div class="col-6">
-                                    <?php
-                                    $id = $product->get_id();
-                                    ?>
-                                    <img class="img-fluid slider" src="<?php echo get_the_post_thumbnail_url($id) ?>"
-                                        alt="lol">
-                                </div>
-                                <div class="col-6">
-                                    <?php
-                                ?>
+                                <div class="row">
+                                    <?php $active = ""; ?>
+                                    <div class="col-md-6">
+                                        <?php
+                                        $id = $product->get_id();
+                                        ?>
+                                        <img class="img-fluid slider" src="<?php echo get_the_post_thumbnail_url($id) ?>"
+                                            alt="lol">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p class="description">
+                                            <?php echo $product->get_description() ?>
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                             <?php
