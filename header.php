@@ -17,59 +17,13 @@
                 <div class="col-12">
                     <nav>
                         <h1 class="branding">
-                            <?php the_title(); ?>
+                            <?php bloginfo( 'name' ); ?>
                         </h1>
                         <?php 
                         wp_nav_menu(array("menu"=>"primary")); ?>
                     </nav>
                 </div>
-                <div class="col-12">
-                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-                        <div class="carousel-inner">
-
-
-                            <?php
-                            $args = array(
-                                'category' => array( 'premium' ),
-                            );
-                            $products = wc_get_products($args);
-
-                            $active = "active";
-                            foreach ($products as $product) {
-                            ?>
-                            <div class="carousel-item <?php echo $active; ?>">
-                                <div class="row">
-                                    <?php $active = ""; ?>
-                                    <div class="col-md-6">
-                                        <?php
-                                        $id = $product->get_id();
-                                        ?>
-                                        <img class="img-fluid slider" src="<?php echo get_the_post_thumbnail_url($id) ?>"
-                                            alt="lol">
-                                    </div>
-                                    <div class="col-md-6">
-                                        <p class="description">
-                                            <?php echo $product->get_description() ?>
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <?php
-                            }
-                            ?>
-                        </div>
-                        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Previous</span>
-                        </a>
-                        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Next</span>
-                        </a>
-                    </div>
-                </div>
-
-            </div>
+                
         </div>
     </header><!-- #masthead -->
 

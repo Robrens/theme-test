@@ -4,10 +4,12 @@ Theme Name: theme-test
 
 header {
     background-color: rgb(167, 171, 175);
-    border: 1px solid black;
+
+
     nav {
         display: flex;
         justify-content: space-around;
+
         .branding {
             display: inline-block;
         }
@@ -18,7 +20,8 @@ header {
             #menu-primary {
                 li {
                     display: inline-block;
-                    a{
+
+                    a {
                         text-decoration: none;
                         color: black;
                     }
@@ -27,30 +30,39 @@ header {
         }
     }
 }
-.carousel-item{
-    div{
-        text-align: center;
-        .slider{
-            height: 25em;
-            width: 35em;
+
+.slider {
+        background-color: rgb(167, 171, 175);
+    .carousel-item {
+        div {
+            text-align: center;
+
+            .slider {
+                height: 25em;
+                width: 35em;
             }
-        .description{
-            display: inline-block;
+
+            .description {
+                display: inline-block;
+            }
         }
     }
 }
-main{
-    .container{
-        .row{
-            div{
-                nav{
-                    .menu-category-container{
-                        .menu{
+
+main {
+    .container {
+        .row {
+            div {
+                nav {
+                    .menu-category-container {
+                        .menu {
                             display: flex;
-                            li{
+
+                            li {
                                 justify-content: space-between;
                                 display: inline-block;
-                                a{
+
+                                a {
                                     text-decoration: none;
                                     color: black;
                                 }

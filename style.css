@@ -2,8 +2,7 @@
 Theme Name: theme-test
 */
 header {
-  background-color: #a7abaf;
-  border: 1px solid black; }
+  background-color: #a7abaf; }
   header nav {
     display: flex;
     justify-content: space-around; }
@@ -17,13 +16,15 @@ header {
           text-decoration: none;
           color: black; }
 
-.carousel-item div {
-  text-align: center; }
-  .carousel-item div .slider {
-    height: 25em;
-    width: 35em; }
-  .carousel-item div .description {
-    display: inline-block; }
+.slider {
+  background-color: #a7abaf; }
+  .slider .carousel-item div {
+    text-align: center; }
+    .slider .carousel-item div .slider {
+      height: 25em;
+      width: 35em; }
+    .slider .carousel-item div .description {
+      display: inline-block; }
 
 main .container .row div nav .menu-category-container .menu {
   display: flex; }
