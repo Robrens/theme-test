@@ -17,4 +17,19 @@ header {
           text-decoration: none;
           color: black; }
 
+.carousel-item div {
+  text-align: center; }
+  .carousel-item div .slider {
+    height: 25em;
+    width: 35em; }
+
+main .container .row div nav .menu-category-container .menu {
+  display: flex; }
+  main .container .row div nav .menu-category-container .menu li {
+    justify-content: space-between;
+    display: inline-block; }
+    main .container .row div nav .menu-category-container .menu li a {
+      text-decoration: none;
+      color: black; }
+
 /*# sourceMappingURL=style.css.map */
