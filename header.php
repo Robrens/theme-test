@@ -26,20 +26,19 @@
                 <div class="col-12">
                     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                         <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <p>plop</p>
-                            </div>
                             <?php
-                $args = array(
-                    'category' => array( 'prenium' ),
-                );
-                $products = wc_get_products($args);
-                
-                // 
-                
-                foreach ($products as $product) {
-                ?>
-                            <div class="carousel-item">
+                            $args = array(
+                                'category' => array( 'prenium' ),
+                            );
+                            $products = wc_get_products($args);
+                            
+                            // 
+                            
+                            $active = "active";
+                            foreach ($products as $product) {
+                            ?>
+                            <div class="carousel-item <?php echo $active; ?>">
+                            <?php $active = ""; ?>
                                 <div class="col-6">
                                     <?php
                                     $id = $product->get_id();
@@ -53,8 +52,8 @@
                                 </div>
                             </div>
                             <?php
-                }
-                ?>
+                            }
+                            ?>
                         </div>
                         <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
